@@ -2,71 +2,82 @@
 
 ### Demo
 */
-struct Company {
-    let name : String
-    var employees : [Person]
-    
-    init(name: String, employees: [Person]) {
-        self.name = name
-        self.employees = employees
-    }
-    
-    mutating func addEmployee(person : Person){
-        employees.append(person)
-    }
-}
+let constant = "diogo"
+var variable = 2.0
 
+let conversionInches = 39.3701
+let conversionFeet = 3.28084
 
 struct Person {
-    var name : String {
+    var name : String? {
         willSet {
-            print("\(name)")
-            print("\(newValue)")
+            print("new value \(newValue)")
+            print("current value \(name)")
         }
         didSet {
-            print("\(name)")
-            print("\(oldValue)")
+            print("old value \(oldValue)")
+            print("current value \(name)")
         }
     }
     
     let age : Int
     var height : Double
     
-    var heightInInches : Double {
-        get { return height * 39.3701 }
-        set { height = newValue / 39.3701 }
-    }
-    
     var heightInFeet : Double {
-        return height * 3.28084
+        get {
+            return height * conversionFeet
+        }
+        set {
+            height = newValue * conversionFeet
+        }
     }
     
+    var heightInInches : Double {
+        return height * conversionInches
+    }
 }
 
-let diogo = Person(name: "Diogo", age: 26, height: 1.80)
 var joao = Person(name: "Joao", age: 26, height: 1.71)
+let diogo = Person(name: "Diogo", age: 26, height: 1.80)
+
+joao.name = "Costa"
+
+class Company {
+    var name : String?
+    var employees : [Person]?
+    
+    init(name: String, employees: [Person]) {
+        self.name = name
+        self.employees = employees
+    }
+}
 
 var bliss = Company(name: "Bliss", employees: [joao, diogo])
-let employees = bliss.employees
 
-var dic : [Int : String] = [:]
-let dic2 = Dictionary<Int, String>()
-dic[0] = "Joao"
-let optionalName : String? = dic[0]
+//var plizz = bliss
+//
+//print("\(bliss.name) - \(plizz.name)")
+//bliss.name = "plizz"
+//print("\(bliss.name) - \(plizz.name)")
 
-print(optionalName)
-// force unwrap NEVER DO!!
-print(optionalName!)
+//Optionals
+var married : String = "coco"
+print(bliss.employees?.count)
 
+print("Entrei e married : \(married)")
 // optional binding
-if let optionalName = optionalName {
-    print(optionalName)
-}
-// nil coalescence
-print(optionalName ?? "No Name")
-// optional chaining
+//if let married = married where married == "coco" {
+//    print("Entrei e married : \(married)")
+//}
 
-// For
+// Nil coalescence
+print(married ?? "not defined")
+
+var array = [0,1,2,3,4,5]
+
+array.forEach{ print($0) }
+
+
 /*:
 [Table of Contents](Table%20of%20Contents) | [Previous](@previous) | [Next](@next)
 */

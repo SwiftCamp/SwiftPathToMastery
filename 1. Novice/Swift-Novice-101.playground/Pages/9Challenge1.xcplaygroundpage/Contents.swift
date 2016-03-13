@@ -7,7 +7,10 @@ Give two words, check if their characters are in reverse. For instance, Amor and
 ****
 
 */
+let love = "Amor"
+let rome = "Roma"
 
+love.uppercaseString.characters.sort() == rome.uppercaseString.characters.sort()
 
 
 /*:
