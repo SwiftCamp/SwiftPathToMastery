@@ -3,6 +3,8 @@
 ### Optionals
 
 Handle optionals from APIs and unwrap them safely
+
+More info [Here](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/swift/grammar/optional-type) and [Here](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/OptionalChaining.html#//apple_ref/doc/uid/TP40014097-CH21-ID245)
 ****
 
 */

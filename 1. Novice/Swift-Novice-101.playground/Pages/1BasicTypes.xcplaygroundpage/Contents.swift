@@ -2,6 +2,10 @@
 
 ### 1. Basic Types
 Use and understand Swift's basic types like Bool, Int, String, and Double
+
+More Info [Here](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60)
+And [Here](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html#//apple_ref/doc/uid/TP40014097-CH7-ID285)
+
 ****
 */
 // Swift is a type-safe language. This means that we need to tell Swift what

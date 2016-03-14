@@ -3,6 +3,8 @@
 ### Object Casting
 
 Cast objects safely from one type to another
+
+More info [Here](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TypeCasting.html#//apple_ref/doc/uid/TP40014097-CH22-ID338)
 ****
 
 */
