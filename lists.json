@@ -1,8 +1,10 @@
-{
-  {"Name" : "Diogo", "Id" : 0},
-  {"Name" : "Joao", "Id" : 1},
-  {"Name" : "Pedro", "Id" : 2},
-  {"Name" : "Carlos", "Id" : 3},
-  {"Name" : "Bruno", "Id" : 4},
-  {"Name" : "Tiago", "Id" : 5}
+{ 
+  [
+    {"Name" : "Diogo", "Id" : 0},
+    {"Name" : "Joao", "Id" : 1},
+    {"Name" : "Pedro", "Id" : 2},
+    {"Name" : "Carlos", "Id" : 3},
+    {"Name" : "Bruno", "Id" : 4},
+    {"Name" : "Tiago", "Id" : 5}
+  ]
 }
